@@ -15,7 +15,7 @@ type RepoContent = {
 
 function getFilesFromRepo(): Promise<RepoContent[]> {
     return fetch(GITHUB_API_CONTENTS, {
-        cache: 'no-cache',
+        // cache: 'no-cache',
         headers: {
             'Authorization': `Bearer ${AUTH_TOKEN}`
         }
