@@ -1,5 +1,6 @@
 // import { MDXRemote } from 'next-mdx-remote/rsc';
 import nextBase64 from 'next-base64';
+import { revalidateTag } from 'next/cache';
 import Link from 'next/link';
 
 // Constants
@@ -12,27 +13,25 @@ type RepoContent = {
     content?: string;
 };
 
-async function getFilesFromRepo(): Promise<RepoContent[]> {
-    const response = await fetch(GITHUB_API_CONTENTS, {
+function getFilesFromRepo(): Promise<RepoContent[]> {
+    return fetch(GITHUB_API_CONTENTS, {
+        cache: 'no-cache',
         headers: {
             'Authorization': `Bearer ${AUTH_TOKEN}`
         }
-    });
-
-    if (!response.ok) {
-        throw new Error('Failed to fetch data from GitHub');
-    }
-
-    return await response.json();
+    })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Failed to fetch data from GitHub');
+            }
+            return response.json();
+        });
 }
 
-export default async function Page({
-    params: { slug },
-}: {
-    params: { slug: string };
-}) {
+export default async function Page() {
 
     const files = await getFilesFromRepo();
+
     return (
         <div className="max-w-screen-md mx-auto p-4 space-y-4">
             {files.map((repo) => (

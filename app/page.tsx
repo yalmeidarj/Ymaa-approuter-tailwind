@@ -24,8 +24,13 @@ export default function Home() {
 
         <h3 className="text-lg md:text-xl font-semibold mb-4 text-1b4332">O que oferecemos:</h3>
         <ul className="list-disc pl-5 mb-4 text-577830">
+          <li className="text-gray-600 mb-2 hover:text-gray-900">
+            <Link href='/desentupimento-de-ralos-seja-internos-externos'>
+              Desentupimento de ralos, seja em ambientes internos ou externos.
+            </Link>
+          </li>
           {[
-            "Desentupimento de ralos, seja em ambientes internos ou externos.",
+            // "Desentupimento de ralos, seja em ambientes internos ou externos.",
             "Resgate de vasos sanitários – dizer adeus a obstruções nunca foi tão fácil!",
             "Sua pia de cozinha não escoa? Estamos aqui para resolver.",
             "Caixas de esgoto e caixas de gordura, tratamos ambas com o mesmo carinho.",
