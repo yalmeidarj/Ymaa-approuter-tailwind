@@ -13,19 +13,22 @@ type RepoContent = {
     content?: string;
 };
 
-function getFilesFromRepo(): Promise<RepoContent[]> {
-    return fetch(GITHUB_API_CONTENTS, {
-        // cache: 'no-cache',
-        headers: {
-            'Authorization': `Bearer ${AUTH_TOKEN}`
-        }
-    })
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Failed to fetch data from GitHub');
-            }
-            return response.json();
-        });
+async function getFilesFromRepo(): Promise<RepoContent[]> {
+    const response = await fetch(GITHUB_API_CONTENTS, {
+        // // cache: 'no-store',
+        // next: {
+        //     tags: ['a']
+        // },
+        // headers: {
+        //     'Authorization': `Bearer ${AUTH_TOKEN}`
+        // }
+    });
+    // revalidateTag('a');
+    // if (!response.ok) {
+    //     throw new Error('Failed to fetch data from GitHub');
+    // }
+
+    return await response.json();
 }
 
 export default async function Page() {

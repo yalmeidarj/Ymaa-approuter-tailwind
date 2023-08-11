@@ -44,9 +44,10 @@ async function getPost(slug: string): Promise<any> {
     const title = slug;
     try {
         const response = await fetch(`${GITHUB_API_CONTENTS}${title}`, {
-            headers: {
-                'Authorization': `Bearer ${AUTH_TOKEN}`
-            }
+            // cache: 'no-cache',
+            // headers: {
+            //     'Authorization': `Bearer ${AUTH_TOKEN}`
+            // }
         });
 
         return response.json();
