@@ -1,8 +1,11 @@
-import ResponsiveAppBar from '@/components/ResponsiveAppBar'
+import ResponsiveAppBar from '../components/ResponsiveAppBar'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import Footer from '@/components/Footer'
+import Footer from '../components/Footer'
+import ContactUsButtons from '../components/ContactUsButtons'
+
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,6 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <ContactUsButtons />
         <ResponsiveAppBar />
         {children}
         <Footer />

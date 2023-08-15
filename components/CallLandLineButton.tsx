@@ -7,11 +7,11 @@ function CallLandLineButton() {
 
     return (
         <button
-            className='flex items-center justify-center hover:bg-cyan-400 text-white px-4 rounded transition duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400'
+            className='flex items-center justify-center bg-dark-orange hover:bg-orange text-white px-4 p-1 rounded transition duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 m-2'
             onClick={handleCallUs}
             aria-label="Call us at (21) 3297-3588"
         >
-            <BsTelephoneForward size={24} aria-hidden="true" className="mr-2" />
+            <BsTelephoneForward aria-hidden="true" className="mr-2" />
             (21) 3297-3588
         </button>
     );

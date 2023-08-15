@@ -1,7 +1,7 @@
-import Banner from '@/components/Banner'
-import CallLandLineButton from '@/components/CallLandLineButton'
-import OurClients from '@/components/OurClients'
-import WhatsAppButton from '@/components/WhatsAppButton'
+import Banner from '../components/Banner'
+import CallLandLineButton from '../components/CallLandLineButton'
+import OurClients from '../components/OurClients'
+import WhatsAppButton from '../components/WhatsAppButton'
 import Image from 'next/image'
 import Link from 'next/link'
 
