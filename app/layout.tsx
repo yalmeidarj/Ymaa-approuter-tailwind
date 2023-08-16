@@ -21,6 +21,17 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      {/* <!-- Google tag (gtag.js) --> */}
+      {/* Global Site Tag (gtag.js) - Google Analytics */}
+      {/* Necessary to prevent error: window.gtag is not defined for Next.js-hydration */}
+      {/* <script async src="https://www.googletagmanager.com/gtag/js?id=AW-957801732"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments)}
+        gtag('js', new Date());
+
+        gtag('config', 'AW-957801732');
+      </script> */}
       <body className={inter.className}>
         <ContactUsButtons />
         <ResponsiveAppBar />

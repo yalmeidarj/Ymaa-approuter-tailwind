@@ -42,21 +42,21 @@ const Footer = () => {
                         <ul className="space-y-2">
                             <li className="flex items-center">
                                 <i className=""></i>
-                                <a href="mailto: ymaadesentupidora@gmail.com">
-                                    ymaadesentupidora@gmail.com
+                                <a href="mailto: contato@ymaadesentupidora.com.br">
+                                    contato@ymaadesentupidora.com.br
                                 </a>
                             </li>
                             <li className="flex items-center">
                                 <BsTwitter />
-                                <a href="https://www.facebook.com/desentupidoraymaa/">
-                                    /desentupidoraymaa
-                                </a>
+                                <Link className='ml-1' target="_blank" href="https://twitter.com/YmaaDesentope">
+                                    Twitter
+                                </Link>
                             </li>
                             <li className="flex items-center">
                                 <BsYoutube />
-                                <a href="https://www.facebook.com/desentupidoraymaa/">
-                                    /desentupidoraymaa
-                                </a>
+                                <Link className='ml-1' target="_blank" href="https://www.youtube.com/@YmaaDesentupidora">
+                                    YouTube
+                                </Link>
                             </li>
                             <li className="flex items-center">
                                 <BsFillTelephoneFill />
@@ -68,7 +68,7 @@ const Footer = () => {
                             </li>
                             <li className="flex items-center">
                                 <BsFacebook className="mr-2" />
-                                <Link href="https://www.facebook.com/desentupidoraymaa/" className="hover:text-secondary">/desentupidoraymaa</Link>
+                                <Link target="_blank" href="https://www.facebook.com/profile.php?id=100092752671613" className="hover:text-secondary">/desentupidoraymaa</Link>
                             </li>
 
                         </ul>

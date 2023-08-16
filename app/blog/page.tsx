@@ -43,15 +43,12 @@ export default async function Page() {
 
     const files = await getFilesFromRepo();
 
-    console.log(files);
-
     // matter(<MyMdxComponent /> as String)
 
     return (
         <>
             <div className="max-w-screen-md mx-auto p-4 space-y-4 m-4">
                 {files.map((repo) => (
-
                     <Link key={repo.path} href={`/blog/${repo.path.split(" ")[0]}`} className="text-blue-500 hover:underline m-4">
                         {repo.path}
                     </Link>
