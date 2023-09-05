@@ -7,6 +7,7 @@ import ContactUsButtons from '../components/ContactUsButtons'
 
 
 
+
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
   title: 'Ymaa Desentupidora',
   description: 'Sua Desentupidora de confiança no RJ',
   verification: {
-    google: "https://www.googletagmanager.com/gtag/js?id=G-7X7R3Z6XBB",
+    google: "google-site-verifitation=G-7X7R3Z6XBB",
   },
 }
 
@@ -36,6 +37,7 @@ export default function RootLayout({
 
         gtag('config', 'AW-957801732');
       </script> */}
+      {/* <Gtag /> */}
       <body className={inter.className}>
         <ContactUsButtons />
         <ResponsiveAppBar />

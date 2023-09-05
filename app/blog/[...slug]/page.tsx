@@ -36,7 +36,7 @@ export async function generateMetadata(
             canonical: `/${data.slug}`,
         },
         verification: {
-            google: "https://www.googletagmanager.com/gtag/js?id=G-7X7R3Z6XBB",
+            google: "google-site-verifitation=G-7X7R3Z6XBB",
         },
         openGraph: {
             title: data.title,

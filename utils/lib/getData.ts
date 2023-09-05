@@ -1,3 +1,4 @@
+
 const GITHUB_API_CONTENTS =
   "https://ymaa-blog-4d92799313d4.herokuapp.com/posts";
 const AUTH_TOKEN = "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"; // Store your token securely in an env variable.
@@ -49,3 +50,4 @@ export async function getPostBySlug(slug: string): Promise<any> {
     console.error(error);
   }
 }
+
