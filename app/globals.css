@@ -20,5 +20,7 @@
 body {
   color: rgb(var(--foreground-rgb));
   height: 100vh;
+  //background: #dde5d3;
+  //background: #f5f5dc;
   background: #f4f4f4;
 }

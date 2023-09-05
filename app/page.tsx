@@ -8,11 +8,11 @@ import Link from 'next/link'
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
-      <div className="z-10 max-w-5xl w-full items-center justify-between text-sm lg:flex">
-        <Banner imageSrc={'https://ymaa.blob.core.windows.net/newcontainer/bg_home.jpg'} title={'Desentupimento rápido e sem sujeira'} />
-      </div>
+      {/* <div className="z-10 max-w-5xl w-full items-center justify-between text-sm lg:flex"> */}
+      <Banner imageSrc={'https://ymaa.blob.core.windows.net/newcontainer/bg_home.jpg'} title={'Desentupimento rápido e sem sujeira'} />
+      {/* </div> */}
 
-      <div className="bg-EAE7DC p-6 md:p-8 rounded-lg shadow-md text-black">
+      <div className="bg-EAE7DC p-6 md:p-8  text-black">
         <h2 className="text-lg md:text-xl font-bold mb-4 text-1b4332">Sobre nós</h2>
         <p className="mb-4 text-base md:text-lg font-bold border-l-4 border-cyan-800 pl-3">
           A <span className="font-bold">Ymaa Desentupidora</span> é a sua parceira no Rio de Janeiro quando o assunto é desentupimento!

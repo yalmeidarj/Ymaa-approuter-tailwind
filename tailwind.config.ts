@@ -14,13 +14,15 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
+        background: "#f4f4f4",
         "ymaa-green": "#577830",
         "light-green": "#A9C4A5",
         "green-lighter": "#CBE3CB",
         "mid-green": "#789661",
         "green-dark": "#1B4332",
-        orange: "#FF685F",
-        "dark-orange": "#CC553D",
+        // orange: "#FF685F",
+        orange: "#672C1E",
+        "dark-orange": "#B74434", // Slightly Darkened
         "light-orange": "#FFA89C",
         "light-color": "#F5F5DC",
         brown: "#211C15",
@@ -32,6 +34,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };
 export default config;

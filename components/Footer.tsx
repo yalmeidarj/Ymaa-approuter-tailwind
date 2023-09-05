@@ -22,55 +22,53 @@ const Footer = () => {
                     </div>
 
                     <div>
-
-                        <h4 className="text-primary text-xl md:text-2xl mb-4">Áreas de Atendimento</h4>
+                        <h1 className="text-white text-primary text-xl md:text-2xl mb-4">Áreas de Atendimento</h1>
                         <ul className="space-y-2">
                             {/* Add more list items similarly */}
                             <li>
-                                <Link href="#" className="italic hover:text-secondary">
+                                <Link href="#" className="text-white hover:text-light-orange italic hover:text-secondary">
                                     Zona Oeste
                                 </Link>
                             </li>
-                            <li className="italic hover:text-secondary"><Link href="#"> Zona Sul</Link></li>
-                            <li className="italic hover:text-secondary"><Link href="#"> Zona Norte</Link></li>
-                            <li className="italic hover:text-secondary"><Link href="#"> Centro</Link></li>
+                            <li className="italic hover:text-secondary"><Link className="text-white hover:text-light-orange" href="#"> Zona Sul</Link></li>
+                            <li className="italic hover:text-secondary"><Link className="text-white hover:text-light-orange" href="#"> Zona Norte</Link></li>
+                            <li className="italic hover:text-secondary"><Link className="text-white hover:text-light-orange" href="#"> Centro</Link></li>
                         </ul>
                     </div>
 
                     <div>
-                        <h4 className="text-primary text-xl md:text-2xl mb-4">Contato</h4>
+                        <h1 className="text-white text-primary text-xl md:text-2xl mb-4">Contato</h1>
                         <ul className="space-y-2">
                             <li className="flex items-center">
                                 <i className=""></i>
-                                <a href="mailto: contato@ymaadesentupidora.com.br">
+                                <a className="text-white hover:text-light-orange" href="mailto: contato@ymaadesentupidora.com.br">
                                     contato@ymaadesentupidora.com.br
                                 </a>
                             </li>
                             <li className="flex items-center">
                                 <BsTwitter />
-                                <Link className='ml-1' target="_blank" href="https://twitter.com/YmaaDesentope">
+                                <Link className='ml-1 text-white hover:text-light-orange' target="_blank" href="https://twitter.com/YmaaDesentope">
                                     Twitter
                                 </Link>
                             </li>
                             <li className="flex items-center">
                                 <BsYoutube />
-                                <Link className='ml-1' target="_blank" href="https://www.youtube.com/@YmaaDesentupidora">
+                                <Link className='ml-1 text-white hover:text-light-orange' target="_blank" href="https://www.youtube.com/@YmaaDesentupidora">
                                     YouTube
                                 </Link>
                             </li>
                             <li className="flex items-center">
                                 <BsFillTelephoneFill />
-                                <a href="tel:2132973588"> (21) 3297-3588</a>
+                                <a className="text-white hover:text-light-orange" href="tel:2132973588"> (21) 3297-3588</a>
                             </li>
                             <li className="flex items-center">
                                 <BsFillPhoneVibrateFill />
-                                <a href="tel:21968792222"> (21) 96879-2222</a>
+                                <a className="text-white hover:text-light-orange" href="tel:21968792222"> (21) 96879-2222</a>
                             </li>
                             <li className="flex items-center">
                                 <BsFacebook className="mr-2" />
-                                <Link target="_blank" href="https://www.facebook.com/profile.php?id=100092752671613" className="hover:text-secondary">/desentupidoraymaa</Link>
+                                <Link target="_blank" className='text-white hover:text-light-orange hover:text-secondary' href="https://www.facebook.com/profile.php?id=100092752671613" >/desentupidoraymaa</Link>
                             </li>
-
                         </ul>
                     </div>
                 </div>
@@ -80,7 +78,8 @@ const Footer = () => {
                         Yalmeida
                     </Link>
                 </div>
-            </footer >
+            </footer>
+
             {/* </div> */}
 
         </>

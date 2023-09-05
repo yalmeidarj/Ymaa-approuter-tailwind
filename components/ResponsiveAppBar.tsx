@@ -52,7 +52,7 @@ function ResponsiveAppBar() {
                     />
                 </Link>
 
-                <button onClick={handleToggleNav} className="md:hidden text-white p-2">
+                <button onClick={handleToggleNav} aria-label='Menu' className="md:hidden text-white p-2">
                     {isNavOpen ? <GrFormClose className="text-green-lighter" size={30} /> : <GrMenu size={25} className="text-green-lighter" />}
                 </button>
 

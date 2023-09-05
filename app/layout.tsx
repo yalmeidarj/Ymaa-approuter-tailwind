@@ -10,6 +10,7 @@ import ContactUsButtons from '../components/ContactUsButtons'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.ymaadesentupidora.com.br'),
   title: 'Ymaa Desentupidora',
   description: 'Sua Desentupidora de confiança no RJ',
 }

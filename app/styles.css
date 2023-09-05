@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* Style for h1 tag */
+  h1 {
+    @apply text-3xl text-ymaa-green font-bold my-4;
+  }
+
+  /* Style for h2 tag */
+  h2 {
+    @apply text-2xl text-ymaa-green font-semibold my-3;
+  }
+
+  /* Style for p tag */
+  p {
+    @apply text-gray-dark leading-relaxed my-2;
+  }
+
+  /* Style for a tag */
+  a {
+    @apply text-orange hover:text-dark-orange;
+  }
+}

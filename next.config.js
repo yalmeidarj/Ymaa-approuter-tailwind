@@ -2,6 +2,9 @@ const withMDX = require("@next/mdx")();
 
 const nextConfig = {
   pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
+  options: {
+    providerImportSource: "@mdx-js/react",
+  },
   reactStrictMode: true,
   swcMinify: true,
   experimental: {
