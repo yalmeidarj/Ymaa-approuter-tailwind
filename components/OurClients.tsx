@@ -15,39 +15,26 @@ type ReviewType = {
 const reviews: ReviewType[] = [
     {
         stars: 5,
-        content: 'Cláudio e sua equipe...',
+        content: 'Cláudio e sua equipe fizeram um trabalho incrível na nossa tubulação de banheiro. Rápido, e muito profissional. Altamente recomendado!',
         author: 'Fausto Goes',
         source: 'Google',
         description: 'Desetupimento no banheiro',
     },
     {
         stars: 5,
-        content: 'Ótimo atendimento e profissionalismo...',
-        author: 'Arthur Leandro',
+        content: 'Responderam rápido e o serviço excepcional! O desentupimento da pia na cozinha foi resolvido em pouco tempo.',
+        author: 'André Leandro',
         source: 'Google',
-        description: 'Desetupimento no banheiro',
+        description: 'Desetupimento de pia na cozinha',
     },
     {
         stars: 5,
-        content: 'Ótimo atendimento e profissionalismo...',
-        author: 'Arthur Leandro',
+        content: 'Confiável e confiável. Sempre conto com este serviço de encanamento para a manutenção de nossos imóveis.',
+        author: 'Vanessa',
         source: 'Google',
-        description: 'Desetupimento no banheiro',
+        description: 'Desetupimento de esgoto',
     },
-    {
-        stars: 5,
-        content: 'Ótimo atendimento e profissionalismo...',
-        author: 'Arthur Leandro',
-        source: 'Google',
-        description: 'Desetupimento no banheiro',
-    },
-    {
-        stars: 5,
-        content: 'Ótimo atendimento e profissionalismo...',
-        author: 'Arthur Leandro',
-        source: 'Google',
-        description: 'Desetupimento no banheiro',
-    },
+
 ];
 
 const OurClients: React.FC = () => {

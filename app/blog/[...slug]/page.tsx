@@ -27,14 +27,37 @@ export async function generateMetadata(
 
     // // Decode the base64-encoded content and parse frontmatter
     // const decoded = nextBase64.decode(data.content);
-    // const object = matter(decoded);
+    const object = matter(data.content);
 
     const metadata = {
         title: data.title,
         description: data.metaDescription,
         alternates: {
             canonical: `/${data.slug}`,
-        }
+        },
+        openGraph: {
+            title: data.title,
+            description: data.metaDescription,
+            url: 'https://www.ymaadesentupidora.com.br/',
+            siteName: 'Ymaa Desentupidora e reformas',
+            images: [
+                {
+                    url: data.images[0].url,
+                    width: 800,
+                    height: 600,
+                    alt: data.images[0].alt
+                },
+                // {
+                //     url: 'https://nextjs.org/og-alt.png',
+                //     width: 1800,
+                //     height: 1600,
+                //     alt: 'My custom alt',
+                // },
+            ],
+            locale: 'pt_BR',
+            type: 'website',
+        },
+
     }
 
     return metadata
@@ -81,17 +104,18 @@ export default async function Page({
         <div className="flex flex-col items-center p-4 bg-background text-black">
             {/* The image will take full width on mobile and adapt on larger screens */}
             <Image
-                src={post.images[0].url}
-                alt={post.images[0].alt}
+                src={blogPost.images[0].url}
+                alt={blogPost.images[0].alt}
                 layout="responsive"
                 width={100}
                 height={100}
                 className="w-full rounded-lg object-cover mb-4 shadow-md max-w-screen-md"
             />
-            <p className="text-sm text-gray-dark mb-4 w-full max-w-screen-md text-center">By {post.author.name} | Last Update: {post.updatedAt.toString()}</p>
+            <p className="text-sm text-gray-dark mb-4 w-full max-w-screen-md text-center">By {post?.author?.name} | Last Update: </p>
             {/* Content is centered and has a maximum width for larger screens */}
             <div className="text-justify max-w-screen-md w-full mb-4">
                 {/* <div className="prose"> */}
+
                 <MDXRemote source={object.content} />
                 {/* </div> */}
             </div>

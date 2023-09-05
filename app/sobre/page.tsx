@@ -9,7 +9,28 @@ import img from '/public/desentupimento-de-bueiro-externo.png'
 import logoImg from '/public/logo-antiga-logo-nova.png'
 import ymaaHouse from '/public/Ymaa-logo-house.png'
 
+export async function generateMetadata() {
 
+
+    const metadata = {
+        title: "Sobre a Ymaa Desentupidora",
+        description: "Conheça um pouco sobre a Ymaa Desentupidora",
+        alternates: {
+            canonical: `/sobre`,
+        },
+        openGraph: {
+            title: "Sobre a Ymaa Desentupidora",
+            description: "Conheça um pouco sobre a Ymaa Desentupidora",
+            url: 'https://www.ymaadesentupidora.com.br/',
+            siteName: 'Ymaa Desentupidora e reformas',
+            locale: 'pt_BR',
+            type: 'website',
+        },
+
+    }
+
+    return metadata
+}
 
 export default function Page() {
     return (
