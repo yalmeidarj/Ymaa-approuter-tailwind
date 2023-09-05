@@ -55,7 +55,7 @@ export async function generateMetadata(
                 // },
             ],
             locale: 'pt_BR',
-            type: 'website',
+            type: 'article',
         },
 
     }
