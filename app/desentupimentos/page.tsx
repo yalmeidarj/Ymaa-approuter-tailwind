@@ -12,6 +12,9 @@ export async function generateMetadata() {
         alternates: {
             canonical: `/desentupimentos`,
         },
+        verification: {
+            google: "https://www.googletagmanager.com/gtag/js?id=G-7X7R3Z6XBB",
+        },
         openGraph: {
             title: "Nossos Serviços",
             description: "Serviços de desentupimento e reformas da Ymaa",

@@ -13,6 +13,9 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.ymaadesentupidora.com.br'),
   title: 'Ymaa Desentupidora',
   description: 'Sua Desentupidora de confiança no RJ',
+  verification: {
+    google: "https://www.googletagmanager.com/gtag/js?id=G-7X7R3Z6XBB",
+  },
 }
 
 export default function RootLayout({

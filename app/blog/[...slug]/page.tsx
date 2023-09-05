@@ -35,6 +35,9 @@ export async function generateMetadata(
         alternates: {
             canonical: `/${data.slug}`,
         },
+        verification: {
+            google: "https://www.googletagmanager.com/gtag/js?id=G-7X7R3Z6XBB",
+        },
         openGraph: {
             title: data.title,
             description: data.metaDescription,
