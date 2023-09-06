@@ -36,7 +36,7 @@ export async function generateMetadata(
             canonical: `/${data.slug}`,
         },
         // verification: {
-        //     google: "google-site-verifitation=G-7X7R3Z6XBB",
+        //     google: "google-site-verifitation=G-S71FQWHZ8V",
         // },
         openGraph: {
             title: data.title,

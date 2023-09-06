@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   title: 'Ymaa Desentupidora',
   description: 'Sua Desentupidora de confiança no RJ',
   // verification: {
-  //   google: "google-site-verifitation=G-7X7R3Z6XBB",
+  //   google: "google-site-verifitation=G-S71FQWHZ8V",
   // },
 }
 const GTM_ID = 'GTM-KV2ZMSRS'
@@ -37,6 +37,18 @@ export default function RootLayout({
         })(window,document,'script','dataLayer','${GTM_ID}');
         `}
       </Script>
+      {/* <Script strategy="afterInteractive">
+      </Script> */}
+      <Script strategy="afterInteractive">
+        {`
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-S71FQWHZ8V');
+        `}
+      </Script>
+      <Script async strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-S71FQWHZ8V" />
 
       {/* <!-- Google tag (gtag.js) --> */}
       {/* Global Site Tag (gtag.js) - Google Analytics */}
