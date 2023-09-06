@@ -12,9 +12,9 @@ export async function generateMetadata() {
         alternates: {
             canonical: `/desentupimentos`,
         },
-        verification: {
-            google: "google-site-verifitation=G-7X7R3Z6XBB",
-        },
+        // verification: {
+        //     google: "google-site-verifitation=G-7X7R3Z6XBB",
+        // },
         openGraph: {
             title: "Nossos Serviços",
             description: "Serviços de desentupimento e reformas da Ymaa",

@@ -14,9 +14,9 @@ export async function generateMetadata() {
         alternates: {
             canonical: `/blog`,
         },
-        verification: {
-            google: "google-site-verifitation=G-7X7R3Z6XBB",
-        },
+        // verification: {
+        //     google: "google-site-verifitation=G-7X7R3Z6XBB",
+        // },
         openGraph: {
             title: "Blog da Ymaa Desentupidora",
             description: "Tudo sobre desentupimento e reformas",

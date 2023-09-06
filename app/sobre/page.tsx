@@ -19,9 +19,9 @@ export async function generateMetadata() {
         alternates: {
             canonical: `/sobre`,
         },
-        verification: {
-            google: "google-site-verifitation=G-7X7R3Z6XBB",
-        },
+        // verification: {
+        //     google: "google-site-verifitation=G-7X7R3Z6XBB",
+        // },
         openGraph: {
             title: "Sobre a Ymaa Desentupidora",
             description: "Conheça um pouco sobre a Ymaa Desentupidora",
