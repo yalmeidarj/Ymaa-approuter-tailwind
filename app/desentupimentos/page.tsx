@@ -4,6 +4,7 @@ import React from 'react';
 import Head from 'next/head';
 import WhatsAppButton from 'components/WhatsAppButton';
 import ArticleCard from 'components/ArticleCard';
+import Link from 'next/link';
 
 export async function generateMetadata() {
     const metadata = {
@@ -32,17 +33,49 @@ export async function generateMetadata() {
 
 export default function Page() {
     return (
-        <div className="min-h-screen bg-white text-gray-dark p-4 md:p-8">
-            <h1 className="text-2xl md:text-4xl font-bold mb-4 md:mb-8">Nossos Serviços</h1>
-            {/* <h2 className="text-xl md:text-2xl font-bold mb-4 md:mb-8">Desentupimento 24 horas em todo Rio de Janeiro</h2> */}
-            {/* Make subtitle even smaller   */}
-            <h3 className="text-sm md:text-xl font-bold mb-4 md:mb-8">Desentupimento 24 horas em todo Rio de Janeiro</h3>
-            <p className="text-black">Desentupimento de ralos, pias e bueiros. Se você está enfrentando problemas de entupimento, temos a solução.</p>
-            <WhatsAppButton />
+        <div className="bg-background text-black p-6">
+            <h1 className="text-2xl font-bold mb-4 text-ymaa-green">Serviços</h1>
 
-            <ul className="space-y-4">
+            <div className="bg-white p-5 rounded-md shadow-md mb-6">
+                <h2 className="text-xl font-semibold mb-3 text-ymaa-green">Serviços Residenciais de Desentupimento</h2>
+                <p className="mb-4">Oferecemos uma vasta gama de soluções residenciais, abrangendo desde o desentupimento de esgotos até manutenção preventiva, garantindo o conforto e bem-estar em seu lar.</p>
+                <ul className="space-y-2">
+                    <li>
+                        <Link href="#"><span className="underline text-mid-green">Esgoto</span></Link>
+                    </li>
+                    <li>
+                        <Link href="#"><span className="underline text-mid-green">Caixa de Gordura</span></Link>
+                    </li>
+                    <li>
+                        <Link href="#"><span className="underline text-mid-green">Coluna</span></Link>
+                    </li>
+                    <li>
+                        <Link href="/#"><span className="underline text-mid-green">Pias/Vasos Sanitários/Ralos</span></Link>
+                    </li>
+                </ul>
+            </div>
 
-            </ul>
+            <div className="bg-white p-5 rounded-md shadow-md">
+                <h2 className="text-xl font-semibold mb-3 text-ymaa-green">Soluções Comerciais de Manutenção e Desentupimento</h2>
+                <p className="mb-4">Somos especialistas em soluções comerciais personalizadas. Nosso compromisso é garantir a eficiência das operações do seu negócio, seja através de contratos de manutenção, serviços de desentupimento ou outras demandas empresariais.</p>
+                <ul className="space-y-2">
+                    <li>
+                        <Link href="#"><span className="underline text-mid-green">Contrato de Manutenção</span></Link>
+                    </li>
+                    <li>
+                        <Link href="#"><span className="underline text-mid-green">Manutenção de Esgoto</span></Link>
+                    </li>
+                    <li>
+                        <Link href="#"><span className="underline text-mid-green">Caixa de Gordura</span></Link>
+                    </li>
+                    <li>
+                        <Link href="#"><span className="underline text-mid-green">Coluna</span></Link>
+                    </li>
+                    <li>
+                        <Link href="#"><span className="underline text-mid-green">Pias/Vasos Sanitários/Ralos</span></Link>
+                    </li>
+                </ul>
+            </div>
         </div>
 
     );
