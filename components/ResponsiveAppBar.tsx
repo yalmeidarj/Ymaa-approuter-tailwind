@@ -48,7 +48,7 @@ function ResponsiveAppBar() {
                         src="https://ymaa.blob.core.windows.net/newcontainer/Logo-light.png"
                         width="220"
                         height="220"
-                        loading="lazy"
+                        priority
                     />
                 </Link>
 
