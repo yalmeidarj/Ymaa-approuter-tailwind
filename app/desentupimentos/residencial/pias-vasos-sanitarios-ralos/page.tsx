@@ -9,7 +9,7 @@ export async function generateMetadata() {
         title: "Sobre a Ymaa Desentupidora",
         description: "Conheça um pouco sobre os diferentes tipos de desentupimento. ",
         alternates: {
-            canonical: `/desentupidora-de-pia-rj`,
+            canonical: `/residencial/pias-vasos-sanitarios-ralos`,
         },
         // verification: {
         //     google: "google-site-verifitation=G-7X7R3Z6XBB",
