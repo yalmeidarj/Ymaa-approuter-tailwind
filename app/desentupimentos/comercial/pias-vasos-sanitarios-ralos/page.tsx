@@ -3,6 +3,32 @@ import LocalBusinessStructuredData from 'components/LocalBusinessStructuredData'
 
 interface ServiceProps { }
 
+export async function generateMetadata() {
+
+
+    const metadata = {
+        title: "Sobre a Ymaa Desentupidora",
+        description: "Conheça um pouco sobre os diferentes tipos de desentupimento. ",
+        alternates: {
+            canonical: `/desentupidora-de-pia-rj`,
+        },
+        // verification: {
+        //     google: "google-site-verifitation=G-7X7R3Z6XBB",
+        // },
+        openGraph: {
+            title: "Sobre a Ymaa Desentupidora",
+            description: "Conheça um pouco sobre os diferentes tipos de desentupimento. ",
+            url: 'https://www.ymaadesentupidora.com.br/',
+            siteName: 'Ymaa Desentupidora e reformas',
+            locale: 'pt_BR',
+            type: 'website',
+        },
+
+    }
+
+    return metadata
+}
+
 const CommercialServices: React.FC<ServiceProps> = () => {
 
 
