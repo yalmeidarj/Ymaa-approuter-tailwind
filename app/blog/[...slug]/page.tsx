@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { metadata } from 'app/layout';
 import { useMDXComponents } from 'mdx-components'
 import { getPostBySlug } from 'utils/lib/getData';
+import ArticleStructuredData from 'components/ArticleStructuredData';
 
 
 // const GITHUB_API_CONTENTS = "https://api.github.com/repos/yalmeidarj/YmaaBlogPosts/contents/";
@@ -104,26 +105,40 @@ export default async function Page({
 
 
     return (
-        <div className="flex flex-col items-center p-4 bg-background text-black">
-            {/* The image will take full width on mobile and adapt on larger screens */}
-            <Image
-                src={blogPost.images[0].url}
-                alt={blogPost.images[0].alt}
-                layout="responsive"
-                width={100}
-                height={100}
-                className="w-full rounded-lg object-cover mb-4 shadow-md max-w-screen-md"
-            />
-            <p className="text-sm text-gray-dark mb-4 w-full max-w-screen-md text-center">By {post?.author?.name} | Last Update: </p>
-            {/* Content is centered and has a maximum width for larger screens */}
-            <div className="text-justify max-w-screen-md w-full mb-4">
-                {/* <div className="prose"> */}
-
-                <MDXRemote source={object.content} />
-                {/* </div> */}
+        <>
+            <ArticleStructuredData data={
+                {
+                    "@context": "https://schema.org",
+                    "@type": "BlogPosting",
+                    "headline": blogPost.title,
+                    "image": [
+                        blogPost.images[0].url,
+                    ],
+                    "datePublished": blogPost.createdAt,
+                    "dateModified": blogPost.updatedAt,
+                    "author": {
+                        "@type": "Person",
+                        "name": blogPost.author.name,
+                    },
+                }
+            } />
+            <div className="flex flex-col items-center p-4 bg-background text-black">
+                {/* The image will take full width on mobile and adapt on larger screens */}
+                <Image
+                    src={blogPost.images[0].url}
+                    alt={blogPost.images[0].alt}
+                    layout="responsive"
+                    width={100}
+                    height={100}
+                    className="w-full rounded-lg object-cover mb-4 shadow-md max-w-screen-md"
+                />
+                <p className="text-sm text-gray-dark mb-4 w-full max-w-screen-md text-center">By {post?.author?.name} | Last Update: </p>
+                {/* Content is centered and has a maximum width for larger screens */}
+                <div className="text-justify max-w-screen-md w-full mb-4">
+                    <MDXRemote source={object.content} />
+                </div>
             </div>
-            {/* <h1 className="text-2xl font-bold text-gray-dark w-full max-w-screen-md text-center">Author: {post.author.name}</h1> */}
-        </div>
+        </>
     );
 }
 

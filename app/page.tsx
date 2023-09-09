@@ -1,3 +1,4 @@
+import LocalBusinessStructuredData from 'components/LocalBusinessStructuredData'
 import Banner from '../components/Banner'
 import CallLandLineButton from '../components/CallLandLineButton'
 import OurClients from '../components/OurClients'
@@ -8,6 +9,59 @@ import Link from 'next/link'
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
+      <LocalBusinessStructuredData
+        data={{
+          "@context": "https://schema.org",
+          "@type": "Plumber",
+          "name": "Ymaa Desentupidora e Reformas",
+          "legalName": "Ymaa Desentupidora e Reformas",
+          "alternateName": "Ymaa Desentupidora",
+          "url": "https://www.ymaadesentupidora.com.br/",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://www.ymaadesentupidora.com.br/"
+          },
+          "logo": "http://placehold.it/512",
+          "image": "https://ymaa.blob.core.windows.net/newcontainer/Logo-light.png",
+          "email": "contato@ymaadesentupidora.com.br",
+          "keywords": "Desentupidora de esgoto, desentupidora no rj, desentupidora rio de janeiro, desentupidora, desentupimento, desentupir, desentupidora de caixa-de-gordura, desentupidora 24h, desentupidora 24 horas rj, desentupidora 24h rj, desentupidora rj, desentupidora rio, desentupidora de coluna",
+          "knowsLanguage": "pt-BR",
+          "priceRange": "$$",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Rio de Janeiro",
+            "addressRegion": "RJ",
+            "addressCountry": "BR"
+          },
+          "telephone": "+552132973588",
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday"],
+              "opens": "06:00",
+              "closes": "02:00"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Wednesday", "Thursday", "Friday"],
+              "opens": "06:00",
+              "closes": "02:00"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": "Saturday",
+              "opens": "10:00",
+              "closes": "20:00"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": "Sunday",
+              "opens": "10:00",
+              "closes": "15:00"
+            }
+          ],
+        }}
+      />
       {/* <div className="z-10 max-w-5xl w-full items-center justify-between text-sm lg:flex"> */}
       <Banner imageSrc={'https://ymaa.blob.core.windows.net/newcontainer/bg_home.jpg'} title={'Desentupimento rápido e sem sujeira'} />
       {/* </div> */}
@@ -25,7 +79,7 @@ export default function Home() {
         <h3 className="text-lg md:text-xl font-semibold mb-4 text-1b4332">O que oferecemos:</h3>
         <ul className="list-disc pl-5 mb-4 text-577830">
           <li className="text-gray-600 mb-2 hover:text-gray-900">
-            <Link href='/desentupimento-de-ralos-seja-internos-externos'>
+            <Link href='/desentupimentos'>
               Desentupimento de ralos, seja em ambientes internos ou externos.
             </Link>
           </li>
@@ -38,7 +92,7 @@ export default function Home() {
             "E o melhor: estamos à disposição 24 horas por dia!"
           ].map((item, idx) => (
             <li key={idx} className="text-gray-600 mb-2 hover:text-gray-900">
-              <Link href='#'>
+              <Link href='/desentupimentos'>
                 {item}
               </Link>
             </li>

@@ -6,6 +6,7 @@ import Footer from '../components/Footer'
 import ContactUsButtons from '../components/ContactUsButtons'
 import Script from 'next/script'
 import Head from 'next/head'
+// import LocalBusinessStructuredData from 'components/LocalBusinessStructuredData'
 
 
 
@@ -39,7 +40,7 @@ export default function RootLayout({
       </Script>
       {/* <Script strategy="afterInteractive">
       </Script> */}
-      <Script strategy="afterInteractive">
+      <Script  >
         {`
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
@@ -49,19 +50,6 @@ export default function RootLayout({
         `}
       </Script>
       <Script async strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-S71FQWHZ8V" />
-
-      {/* <!-- Google tag (gtag.js) --> */}
-      {/* Global Site Tag (gtag.js) - Google Analytics */}
-      {/* Necessary to prevent error: window.gtag is not defined for Next.js-hydration */}
-      {/* <script async src="https://www.googletagmanager.com/gtag/js?id=AW-957801732"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments)}
-        gtag('js', new Date());
-
-        gtag('config', 'AW-957801732');
-      </script> */}
-      {/* <Gtag /> */}
       <body className={inter.className}>
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KV2ZMSRS"
           height="0" width="0" className="display:none;visibility:hidden"></iframe></noscript>

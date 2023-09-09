@@ -41,16 +41,16 @@ export default function Page() {
                 <p className="mb-4">Oferecemos uma vasta gama de soluções residenciais, abrangendo desde o desentupimento de esgotos até manutenção preventiva, garantindo o conforto e bem-estar em seu lar.</p>
                 <ul className="space-y-2">
                     <li>
-                        <Link href="#"><span className="underline text-mid-green">Esgoto</span></Link>
+                        <Link href="/desentupimentos/residencial/esgoto"><span className="underline text-mid-green">Esgoto</span></Link>
                     </li>
                     <li>
-                        <Link href="#"><span className="underline text-mid-green">Caixa de Gordura</span></Link>
+                        <Link href="/desentupimentos/residencial/caixa-de-gordura"><span className="underline text-mid-green">Caixa de Gordura</span></Link>
                     </li>
                     <li>
-                        <Link href="#"><span className="underline text-mid-green">Coluna</span></Link>
+                        <Link href="/desentupimentos/residencial/coluna"><span className="underline text-mid-green">Coluna</span></Link>
                     </li>
                     <li>
-                        <Link href="/#"><span className="underline text-mid-green">Pias/Vasos Sanitários/Ralos</span></Link>
+                        <Link href="/desentupimentos/residencial/pias-vasos-sanitarios-ralos"><span className="underline text-mid-green">Pias/Vasos Sanitários/Ralos</span></Link>
                     </li>
                 </ul>
             </div>
@@ -60,19 +60,19 @@ export default function Page() {
                 <p className="mb-4">Somos especialistas em soluções comerciais personalizadas. Nosso compromisso é garantir a eficiência das operações do seu negócio, seja através de contratos de manutenção, serviços de desentupimento ou outras demandas empresariais.</p>
                 <ul className="space-y-2">
                     <li>
-                        <Link href="#"><span className="underline text-mid-green">Contrato de Manutenção</span></Link>
+                        <Link href="/desentupimentos/comercial/contrato-de-manutencao"><span className="underline text-mid-green">Contrato de Manutenção</span></Link>
                     </li>
                     <li>
-                        <Link href="#"><span className="underline text-mid-green">Manutenção de Esgoto</span></Link>
+                        <Link href="/desentupimentos/comercial/manutencao-de-esgoto"><span className="underline text-mid-green">Manutenção de Esgoto</span></Link>
                     </li>
                     <li>
-                        <Link href="#"><span className="underline text-mid-green">Caixa de Gordura</span></Link>
+                        <Link href="/desentupimentos/comercial/caixa-de-gordura"><span className="underline text-mid-green">Caixa de Gordura</span></Link>
                     </li>
                     <li>
-                        <Link href="#"><span className="underline text-mid-green">Coluna</span></Link>
+                        <Link href="/desentupimentos/comercial/coluna"><span className="underline text-mid-green">Coluna</span></Link>
                     </li>
                     <li>
-                        <Link href="#"><span className="underline text-mid-green">Pias/Vasos Sanitários/Ralos</span></Link>
+                        <Link href="/desentupimentos/comercial/pias-vasos-sanitarios-ralos"><span className="underline text-mid-green">Pias/Vasos Sanitários/Ralos</span></Link>
                     </li>
                 </ul>
             </div>
