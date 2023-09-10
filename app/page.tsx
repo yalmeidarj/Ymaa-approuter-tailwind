@@ -37,27 +37,29 @@ export default function Home() {
           "openingHoursSpecification": [
             {
               "@type": "OpeningHoursSpecification",
-              "dayOfWeek": ["Monday", "Tuesday"],
-              "opens": "06:00",
-              "closes": "02:00"
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+              "opens": "00:00",
+              "closes": "23:59"
             },
             {
               "@type": "OpeningHoursSpecification",
-              "dayOfWeek": ["Wednesday", "Thursday", "Friday"],
-              "opens": "06:00",
-              "closes": "02:00"
-            },
-            {
-              "@type": "OpeningHoursSpecification",
-              "dayOfWeek": "Saturday",
+              "dayOfWeek": ["Saturday"],
               "opens": "10:00",
-              "closes": "20:00"
+              "closes": "17:00"
             },
             {
               "@type": "OpeningHoursSpecification",
-              "dayOfWeek": "Sunday",
-              "opens": "10:00",
-              "closes": "15:00"
+              "dayOfWeek": ["Sunday"],
+              "opens": "00:00",
+              "closes": "23:59"
+            }
+          ],
+          "serviceArea": [
+            {
+              "@type": "postalAddress",
+              "addressLocality": "Rio de Janeiro",
+              "addressRegion": "RJ",
+              "addressCountry": "Brazil"
             }
           ],
         }}

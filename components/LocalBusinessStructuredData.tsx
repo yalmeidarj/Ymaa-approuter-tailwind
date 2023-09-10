@@ -31,6 +31,12 @@ type LocalBusinessStructuredDataProps = {
             opens: string;
             closes: string;
         }[];
+        serviceArea: {
+            "@type": string;
+            addressLocality: string;
+            addressRegion: string;
+            addressCountry: string;
+        }[];
     };
 }
 
