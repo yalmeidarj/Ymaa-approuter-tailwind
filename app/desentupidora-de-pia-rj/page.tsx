@@ -10,7 +10,7 @@ export async function generateMetadata() {
         title: "Desentupidora de Pia no Rio de Janeiro",
         description: "Desentupimento de Pia",
         alternates: {
-            canonical: `https://www.ymaadesentupidora.com.br/desentupidora-de-pia-rj`,
+            canonical: `https://www.ymaadesentupidora.com.br/blog`,
         },
         // verification: {
         //     google: "google-site-verifitation=G-7X7R3Z6XBB",
