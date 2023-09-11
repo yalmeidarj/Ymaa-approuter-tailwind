@@ -2,32 +2,18 @@ import React from 'react';
 import Head from 'next/head';
 import LocalBusinessStructuredData from 'components/LocalBusinessStructuredData';
 import { localBusinessStructuredDataYmaa } from 'utils/lib/getData';
+import { Metadata } from 'next';
 
-export async function generateMetadata() {
-
-
-    const metadata = {
-        title: "Sobre a Ymaa Desentupidora",
-        description: "Conheça um pouco sobre os diferentes tipos de desentupimento. ",
-        alternates: {
-            canonical: `/residencial/pias-vasos-sanitarios-ralos`,
-        },
-        // verification: {
-        //     google: "google-site-verifitation=G-7X7R3Z6XBB",
-        // },
-        openGraph: {
-            title: "Sobre a Ymaa Desentupidora",
-            description: "Conheça um pouco sobre os diferentes tipos de desentupimento. ",
-            url: 'https://www.ymaadesentupidora.com.br/',
-            siteName: 'Ymaa Desentupidora e reformas',
-            locale: 'pt_BR',
-            type: 'website',
-        },
-
-    }
-
-    return metadata
+export const metadata: Metadata = {
+    metadataBase: new URL('https://www.ymaadesentupidora.com.br'),
+    title: 'Desentupir pias, vasos sanitários e ralos com a Ymaa Desentupidora',
+    description: 'Desentupimos suas pias, vasos sanitários e ralos residenciais',
+    alternates: {
+        canonical: 'https://www.ymaadesentupidora.com.br/residencial/pias-vasos-sanitarios-ralos',
+    },
 }
+
+
 const PiasVasosRalos: React.FC = () => {
     const data = {
         "@context": "https://schema.org",
