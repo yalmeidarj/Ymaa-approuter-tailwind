@@ -24,21 +24,16 @@ export async function generateMetadata(
 
     // Get the slug and content from the file system
     const slug = params.slug
-    const data = await getPost(slug)
 
-    // // Decode the base64-encoded content and parse frontmatter
-    // const decoded = nextBase64.decode(data.content);
+    const data = await getPost(slug)
     const object = matter(data.content);
 
     const metadata = {
         title: data.title,
         description: data.metaDescription,
         alternates: {
-            canonical: `/${data.slug}`,
+            canonical: `https://www.ymaadesentupidora.com.br/${data.slug}`,
         },
-        // verification: {
-        //     google: "google-site-verifitation=G-S71FQWHZ8V",
-        // },
         openGraph: {
             title: data.title,
             description: data.metaDescription,
@@ -50,18 +45,11 @@ export async function generateMetadata(
                     width: 800,
                     height: 600,
                     alt: data.images[0].alt
-                },
-                // {
-                //     url: 'https://nextjs.org/og-alt.png',
-                //     width: 1800,
-                //     height: 1600,
-                //     alt: 'My custom alt',
-                // },
+                }
             ],
             locale: 'pt_BR',
             type: 'article',
         },
-
     }
 
     return metadata
@@ -74,10 +62,10 @@ type Post = {
 }
 
 async function getPost(slug: string): Promise<any> {
-    // const title = slug + '.mdx';
+    
     try {
         const response = await fetch(`${GITHUB_API_CONTENTS}${slug}`, {
-            // cache: 'no-cache',
+            cache: 'no-cache',
             // headers: {
             //     'Authorization': `Bearer ${AUTH_TOKEN}`
             // }

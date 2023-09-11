@@ -1,43 +1,12 @@
 import React from 'react';
 import Head from 'next/head';
 import LocalBusinessStructuredData from 'components/LocalBusinessStructuredData';
+import { localBusinessStructuredDataYmaa } from 'utils/lib/getData'
 
 type Props = {};
 
 const DesentupimentoResidencialColuna: React.FC<Props> = () => {
 
-
-    const data = {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        name: "Ymaa Desentupidora e reformas",
-        legalName: "Ymaa Desentupidora e reformas",
-        alternateName: "Ymaa Desentupidora",
-        url: "https://www.ymaadesentupidora.com.br/",
-        email: "contato@ymaadesentupidora.com.br",
-        keywords: "Desentupidora 24h, desentupidora, desentupidora de esgoto, desentupidora de coluna, desentupidora de caixa-de-gordura, desentupidora rj",
-        knowsLanguage: "pt-BR",
-        priceRange: "R$ - A consultar",
-        address: {
-            "@type": "PostalAddress",
-            addressLocality: "Rio de Janeiro",
-            addressRegion: "RJ",
-            addressCountry: "BR",
-        },
-        telephone: "+552132973588",
-        openingHoursSpecification: [{
-            "@type": "OpeningHoursSpecification",
-            dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-            opens: "00:00",
-            closes: "23:59",
-        }],
-        logo: "/path/to/logo.jpg",
-        image: "/path/to/image.jpg",
-        mainEntityOfPage: {
-            "@type": "WebPage",
-            "@id": "https://www.ymaadesentupidora.com.br/desentupimento/residencial/coluna"
-        }
-    };
 
     return (
         <>
@@ -65,7 +34,7 @@ const DesentupimentoResidencialColuna: React.FC<Props> = () => {
                     </p>
                 </div>
             </div>
-            <LocalBusinessStructuredData data={data} />
+            <LocalBusinessStructuredData data={localBusinessStructuredDataYmaa} />
         </>
     );
 };

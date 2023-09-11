@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import LocalBusinessStructuredData from 'components/LocalBusinessStructuredData';
+import { localBusinessStructuredDataYmaa } from 'utils/lib/getData';
 
 const DesentupimentoComercialManutencaoEsgoto: React.FC = () => {
 
@@ -61,7 +62,7 @@ const DesentupimentoComercialManutencaoEsgoto: React.FC = () => {
                 </div>
             </div>
 
-            <LocalBusinessStructuredData data={data} />
+            <LocalBusinessStructuredData data={localBusinessStructuredDataYmaa} />
         </>
     );
 };

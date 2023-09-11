@@ -1,5 +1,6 @@
 import React from 'react';
 import LocalBusinessStructuredData from 'components/LocalBusinessStructuredData';
+import { localBusinessStructuredDataYmaa } from 'utils/lib/getData';
 
 interface ServiceProps { }
 
@@ -69,7 +70,7 @@ const CommercialServices: React.FC<ServiceProps> = () => {
     return (
         <div className="max-w-screen-md mx-auto p-4 space-y-4 m-4 bg-background text-black">
 
-            <LocalBusinessStructuredData data={structuredData} />
+            <LocalBusinessStructuredData data={localBusinessStructuredDataYmaa} />
 
             <div className="text-center mb-6">
                 <h1 className="text-2xl font-semibold text-ymaa-green mb-4">Serviços Comerciais de Desentupimento</h1>

@@ -3,6 +3,8 @@ import Head from 'next/head';
 import WhatsAppButton from 'components/WhatsAppButton';
 import ArticleCard from 'components/ArticleCard';
 import Link from 'next/link';
+import LocalBusinessStructuredData from 'components/LocalBusinessStructuredData';
+import { localBusinessStructuredDataYmaa } from 'utils/lib/getData';
 
 export async function generateMetadata() {
     const metadata = {
@@ -35,7 +37,9 @@ export default function Page() {
                 <h2 className="text-xl font-semibold mb-3 text-ymaa-green">Serviços Residenciais de Desentupimento</h2>
                 <p className="mb-4"> Para desentupir caixas de gordura, a Ymaa Desentupidora utiliza equipamentos de ponta, como máquinas rotativas e hidrojateamento. Além disso, contamos com uma equipe altamente qualificada, que realiza o serviço com agilidade e eficiência.</p>
             </div>
+            <LocalBusinessStructuredData
+                data={localBusinessStructuredDataYmaa}
+            />
         </div>
-
     );
 }

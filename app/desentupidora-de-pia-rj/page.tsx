@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import LocalBusinessStructuredData from 'components/LocalBusinessStructuredData';
+import { localBusinessStructuredDataYmaa } from 'utils/lib/getData';
 
 export async function generateMetadata() {
 
@@ -28,59 +29,60 @@ export async function generateMetadata() {
     return metadata
 }
 const Page: React.FC = () => {
-    const data = {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        name: "Ymaa Desentupidora e reformas",
-        legalName: "Ymaa Desentupidora e reformas",
-        alternateName: "Ymaa Desentupidora",
-        url: "https://www.ymaadesentupidora.com.br/",
-        email: "contato@ymaadesentupidora.com.br",
-        keywords: "Desentupidora, desentupimento de pias, desentupimento de vasos sanitários, desentupimento de ralos, desentupidora rj",
-        knowsLanguage: "pt-BR",
-        priceRange: "R$ - A consultar",
-        address: {
-            "@type": "PostalAddress",
-            addressLocality: "Rio de Janeiro",
-            addressRegion: "RJ",
-            addressCountry: "BR",
-        },
-        telephone: "+552132973588",
-        "openingHoursSpecification": [
-            {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-                "opens": "00:00",
-                "closes": "23:59"
-            },
-            {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": ["Saturday"],
-                "opens": "10:00",
-                "closes": "17:00"
-            },
-            {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": ["Sunday"],
-                "opens": "00:00",
-                "closes": "23:59"
-            }
-        ],
-        "serviceArea": [
-            {
-                "@type": "postalAddress",
-                "addressLocality": "Rio de Janeiro",
-                "addressRegion": "RJ",
-                "addressCountry": "Brazil"
-            }
-        ],
-        logo: "/path/to/logo.jpg",
-        image: "/path/to/image.jpg",
-        mainEntityOfPage: {
-            "@type": "WebPage",
-            "@id": "https://www.ymaadesentupidora.com.br",
-        }
-    };
+    // const data = {
+    //     "@context": "https://schema.org",
+    //     "@type": "LocalBusiness",
+    //     name: "Ymaa Desentupidora e reformas",
+    //     legalName: "Ymaa Desentupidora e reformas",
+    //     alternateName: "Ymaa Desentupidora",
+    //     url: "https://www.ymaadesentupidora.com.br/",
+    //     email: "contato@ymaadesentupidora.com.br",
+    //     keywords: "Desentupidora, desentupimento de pias, desentupimento de vasos sanitários, desentupimento de ralos, desentupidora rj",
+    //     knowsLanguage: "pt-BR",
+    //     priceRange: "R$ - A consultar",
+    //     address: {
+    //         "@type": "PostalAddress",
+    //         addressLocality: "Rio de Janeiro",
+    //         addressRegion: "RJ",
+    //         addressCountry: "BR",
+    //     },
+    //     telephone: "+552132973588",
+    //     "openingHoursSpecification": [
+    //         {
+    //             "@type": "OpeningHoursSpecification",
+    //             "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    //             "opens": "00:00",
+    //             "closes": "23:59"
+    //         },
+    //         {
+    //             "@type": "OpeningHoursSpecification",
+    //             "dayOfWeek": ["Saturday"],
+    //             "opens": "10:00",
+    //             "closes": "17:00"
+    //         },
+    //         {
+    //             "@type": "OpeningHoursSpecification",
+    //             "dayOfWeek": ["Sunday"],
+    //             "opens": "00:00",
+    //             "closes": "23:59"
+    //         }
+    //     ],
+    //     "serviceArea": [
+    //         {
+    //             "@type": "postalAddress",
+    //             "addressLocality": "Rio de Janeiro",
+    //             "addressRegion": "RJ",
+    //             "addressCountry": "Brazil"
+    //         }
+    //     ],
+    //     mainEntityOfPage: {
+    //         "@type": "WebPage",
+    //         "@id": "https://www.ymaadesentupidora.com.br",
+    //     },
+    //     logo: "/path/to/logo.jpg",
+    //     image: "/path/to/image.jpg",
+
+    // };
 
     return (
         <>
@@ -108,7 +110,7 @@ const Page: React.FC = () => {
                     </p>
                 </div>
             </div>
-            <LocalBusinessStructuredData data={data} />
+            <LocalBusinessStructuredData data={localBusinessStructuredDataYmaa} />
         </>
     );
 };

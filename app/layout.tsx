@@ -20,6 +20,7 @@ export const metadata: Metadata = {
   // verification: {
   //   google: "google-site-verifitation=G-S71FQWHZ8V",
   // },
+  canonical: 'https://www.ymaadesentupidora.com.br/',
 }
 const GTM_ID = 'GTM-KV2ZMSRS'
 export default function RootLayout({

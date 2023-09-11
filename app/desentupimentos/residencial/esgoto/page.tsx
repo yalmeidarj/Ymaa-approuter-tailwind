@@ -1,6 +1,7 @@
 // components/DesentupimentoResidencialEsgoto.tsx
 import React from 'react';
 import LocalBusinessStructuredData from 'components/LocalBusinessStructuredData';
+import { localBusinessStructuredDataYmaa } from 'utils/lib/getData';
 
 export default function DesentupimentoResidencialEsgoto() {
 
@@ -44,7 +45,7 @@ export default function DesentupimentoResidencialEsgoto() {
     return (
         <div className="max-w-screen-md mx-auto p-4 space-y-4 m-4 bg-background text-brown">
 
-            <LocalBusinessStructuredData data={businessData} />
+            <LocalBusinessStructuredData data={localBusinessStructuredDataYmaa} />
 
             <h1 className="text-ymaa-green text-3xl font-semibold">
                 Serviços Residenciais de Desentupimento

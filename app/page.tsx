@@ -5,64 +5,13 @@ import OurClients from '../components/OurClients'
 import WhatsAppButton from '../components/WhatsAppButton'
 import Image from 'next/image'
 import Link from 'next/link'
+import { localBusinessStructuredDataYmaa } from 'utils/lib/getData'
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
       <LocalBusinessStructuredData
-        data={{
-          "@context": "https://schema.org",
-          "@type": "Plumber",
-          "name": "Ymaa Desentupidora e Reformas",
-          "legalName": "Ymaa Desentupidora e Reformas",
-          "alternateName": "Ymaa Desentupidora",
-          "url": "https://www.ymaadesentupidora.com.br/",
-          "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https://www.ymaadesentupidora.com.br/"
-          },
-          "logo": "http://placehold.it/512",
-          "image": "https://ymaa.blob.core.windows.net/newcontainer/Logo-light.png",
-          "email": "contato@ymaadesentupidora.com.br",
-          "keywords": "Desentupidora de esgoto, desentupidora no rj, desentupidora rio de janeiro, desentupidora, desentupimento, desentupir, desentupidora de caixa-de-gordura, desentupidora 24h, desentupidora 24 horas rj, desentupidora 24h rj, desentupidora rj, desentupidora rio, desentupidora de coluna",
-          "knowsLanguage": "pt-BR",
-          "priceRange": "$$",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Rio de Janeiro",
-            "addressRegion": "RJ",
-            "addressCountry": "BR"
-          },
-          "telephone": "+552132973588",
-          "openingHoursSpecification": [
-            {
-              "@type": "OpeningHoursSpecification",
-              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-              "opens": "00:00",
-              "closes": "23:59"
-            },
-            {
-              "@type": "OpeningHoursSpecification",
-              "dayOfWeek": ["Saturday"],
-              "opens": "10:00",
-              "closes": "17:00"
-            },
-            {
-              "@type": "OpeningHoursSpecification",
-              "dayOfWeek": ["Sunday"],
-              "opens": "00:00",
-              "closes": "23:59"
-            }
-          ],
-          "serviceArea": [
-            {
-              "@type": "postalAddress",
-              "addressLocality": "Rio de Janeiro",
-              "addressRegion": "RJ",
-              "addressCountry": "Brazil"
-            }
-          ],
-        }}
+        data={localBusinessStructuredDataYmaa}
       />
       {/* <div className="z-10 max-w-5xl w-full items-center justify-between text-sm lg:flex"> */}
       <Banner imageSrc={'https://ymaa.blob.core.windows.net/newcontainer/bg_home.jpg'} title={'Desentupimento rápido e sem sujeira'} />
