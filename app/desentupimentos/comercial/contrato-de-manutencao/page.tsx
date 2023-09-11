@@ -2,6 +2,17 @@ import React from 'react';
 import Head from 'next/head';
 import LocalBusinessStructuredData from 'components/LocalBusinessStructuredData';
 import { localBusinessStructuredDataYmaa } from 'utils/lib/getData';
+import { Metadata } from 'next';
+
+
+export const metadata: Metadata = {
+    metadataBase: new URL('https://www.ymaadesentupidora.com.br'),
+    title: 'Contrato de manutenção com a Ymaa Desentupidora',
+    description: 'Mantenha sua infraestrutura de esgoto com nosso contrato de manutenção',
+    alternates: {
+        canonical: 'https://www.ymaadesentupidora.com.br/comercial/contrato-de-manutencao',
+    },
+}
 
 const ContratoDeManutencao: React.FC = () => {
 

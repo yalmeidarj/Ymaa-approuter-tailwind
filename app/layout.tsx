@@ -17,10 +17,9 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.ymaadesentupidora.com.br'),
   title: 'Ymaa Desentupidora',
   description: 'Sua Desentupidora de confiança no RJ',
-  // verification: {
-  //   google: "google-site-verifitation=G-S71FQWHZ8V",
-  // },
-  canonical: 'https://www.ymaadesentupidora.com.br/',
+  alternates: {
+    canonical: 'https://www.ymaadesentupidora.com.br',
+  },
 }
 const GTM_ID = 'GTM-KV2ZMSRS'
 export default function RootLayout({

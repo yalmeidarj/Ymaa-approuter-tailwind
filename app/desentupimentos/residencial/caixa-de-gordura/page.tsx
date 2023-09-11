@@ -2,8 +2,19 @@ import React from 'react';
 import Head from 'next/head';
 import LocalBusinessStructuredData from 'components/LocalBusinessStructuredData';
 import { localBusinessStructuredDataYmaa } from 'utils/lib/getData';
+import { Metadata } from 'next';
 
 type Props = {};
+
+
+export const metadata: Metadata = {
+    metadataBase: new URL('https://www.ymaadesentupidora.com.br'),
+    title: 'Desentupir caixa de gordura com a Ymaa Desentupidora',
+    description: 'Desentupimos sua caixa de gordura residencial',
+    alternates: {
+        canonical: 'https://www.ymaadesentupidora.com.br/residencial/caixa-de-gordura',
+    },
+}
 
 const DesentupimentoResidencialCaixaDeGordura: React.FC<Props> = () => {
 

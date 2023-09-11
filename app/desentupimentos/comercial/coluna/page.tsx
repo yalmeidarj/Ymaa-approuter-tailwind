@@ -2,8 +2,19 @@ import React from 'react';
 import Head from 'next/head';
 import LocalBusinessStructuredData from 'components/LocalBusinessStructuredData';
 import { localBusinessStructuredDataYmaa } from 'utils/lib/getData'
+import { Metadata } from 'next';
 
 type Props = {};
+
+// comercial/coluna
+export const metadata: Metadata = {
+    metadataBase: new URL('https://www.ymaadesentupidora.com.br'),
+    title: 'Desentupir coluna comercial com a Ymaa Desentupidora',
+    description: 'Desentupimos sua coluna comercial',
+    alternates: {
+        canonical: 'https://www.ymaadesentupidora.com.br/comercial/coluna',
+    },
+}
 
 const DesentupimentoResidencialColuna: React.FC<Props> = () => {
 

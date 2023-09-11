@@ -2,7 +2,18 @@ import React from 'react';
 import Head from 'next/head';
 import LocalBusinessStructuredData from 'components/LocalBusinessStructuredData';
 import { localBusinessStructuredDataYmaa } from 'utils/lib/getData';
+import { Metadata } from 'next';
 
+
+// comercial/manutencao-de-esgoto
+export const metadata: Metadata = {
+    metadataBase: new URL('https://www.ymaadesentupidora.com.br'),
+    title: 'Manutenção de esgoto com a Ymaa Desentupidora',
+    description: 'Oferecemos serviços de manutenção de esgoto comercial',
+    alternates: {
+        canonical: 'https://www.ymaadesentupidora.com.br/comercial/manutencao-de-esgoto',
+    },
+}
 const DesentupimentoComercialManutencaoEsgoto: React.FC = () => {
 
 

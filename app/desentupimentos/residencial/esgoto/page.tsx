@@ -2,6 +2,18 @@
 import React from 'react';
 import LocalBusinessStructuredData from 'components/LocalBusinessStructuredData';
 import { localBusinessStructuredDataYmaa } from 'utils/lib/getData';
+import { Metadata } from 'next';
+
+
+export const metadata: Metadata = {
+    metadataBase: new URL('https://www.ymaadesentupidora.com.br'),
+    title: 'Desentupir esgoto com a Ymaa Desentupidora',
+    description: 'Desentupimos seu esgoto residencial',
+    alternates: {
+        canonical: 'https://www.ymaadesentupidora.com.br/residencial/esgoto',
+    },
+}
+
 
 export default function DesentupimentoResidencialEsgoto() {
 

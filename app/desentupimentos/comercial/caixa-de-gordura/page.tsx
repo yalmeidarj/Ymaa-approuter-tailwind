@@ -5,26 +5,15 @@ import ArticleCard from 'components/ArticleCard';
 import Link from 'next/link';
 import LocalBusinessStructuredData from 'components/LocalBusinessStructuredData';
 import { localBusinessStructuredDataYmaa } from 'utils/lib/getData';
+import { Metadata } from 'next';
 
-export async function generateMetadata() {
-    const metadata = {
-        title: "Desentupimento comercial de caixa de gordura",
-        description: "Desentupimos caixas de gordura em restaurantes, hotéis, condomínios e outros estabelecimentos comerciais.",
-        alternates: {
-            canonical: `/desentupimentos`,
-        },
-        openGraph: {
-            title: "Desentupimento comercial de caixa de gordura",
-            description: "Desentupimos caixas de gordura em restaurantes, hotéis, condomínios e outros estabelecimentos comerciais.",
-            url: 'https://www.ymaadesentupidora.com.br/',
-            siteName: 'Ymaa Desentupidora e reformas',
-            locale: 'pt_BR',
-            type: 'website',
-        },
-
-    }
-
-    return metadata
+export const metadata: Metadata = {
+    metadataBase: new URL('https://www.ymaadesentupidora.com.br'),
+    title: 'Desentupir caixa de gordura comercial com a Ymaa Desentupidora',
+    description: 'Desentupimos sua caixa de gordura comercial',
+    alternates: {
+        canonical: 'https://www.ymaadesentupidora.com.br/comercial/caixa-de-gordura',
+    },
 }
 
 
