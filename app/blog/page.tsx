@@ -12,7 +12,7 @@ export async function generateMetadata() {
         title: "Blog da Ymaa Desentupidora",
         description: "Tudo sobre desentupimento e reformas",
         alternates: {
-            canonical: `/blog`,
+            canonical: `https://ymaadesentupidora.com.br/blog`,
         },
         // verification: {
         //     google: "google-site-verifitation=G-7X7R3Z6XBB",
